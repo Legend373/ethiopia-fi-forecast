@@ -1,0 +1,17 @@
+# Ignore Python cache and venv
+__pycache__/
+*.pyc
+.venv/
+
+# Ignore data folder except DVC metadata
+
+data/**
+!data/**/*.dvc
+!data/*.dvc
+
+# DVC cache
+/.dvc/cache/
+
+# Misc
+.ipynb_checkpoints/
+.DS_Store
